@@ -183,3 +183,78 @@ body.dark .skill-card, body.dark .project-card, body.dark .about-card {
 
 body.dark .nav-links a { color: #94a3b8; }
 body.dark .nav-links a.active { color: #60a5fa; }
+
+/* ================= MOBILE RESPONSIVENESS ================= */
+
+/* Tablets and smaller screens (under 1024px) */
+@media (max-width: 1024px) {
+    .hero-content {
+        flex-direction: column; /* Stacks text and image vertically */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-image img {
+        max-width: 300px; /* Shrinks image slightly */
+    }
+}
+
+/* Mobile Phones (under 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hides traditional menu—you'd usually add a burger menu here */
+    }
+    
+    /* Alternatively, make the nav links small and scrollable */
+    .nav-content {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Force grids to 1 column on small phones */
+    .skills-grid, .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Fix About page layout */
+    .container[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .about-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        width: 100%; /* Makes buttons full-width for easier tapping */
+        text-align: center;
+    }
+}
