@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Tankiso</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Tankiso.</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a class="active" href="projects.html">Projects</a></li>
+                    <li><button id="theme-toggle" style="background:none; border:none; cursor:pointer; font-size:1.2rem;">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<!-- ================= NAVBAR ================= -->
-<header class="navbar">
-  <div class="container nav-content">
-    <div class="logo">Projects</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a class="active" href="projects.html">Works</a></li>
-        <li><button id="theme-toggle">🌙</button></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <div class="container">
+        <div style="text-align: center; margin: 60px 0 20px;">
+            <h2 style="font-size: 2.5rem;">My Projects</h2>
+            <p style="color: #64748b;">A collection of my recent work in web and mobile development.</p>
+        </div>
+        
+        <div class="projects-grid" id="projects-container"></div>
+    </div>
 
-<!-- ================= PROJECTS ================= -->
-<section class="projects">
-  <div class="container projects-grid" id="projects-container">
-    <!-- Projects auto-loaded by JS -->
-  </div>
-</section>
+    <footer class="footer">
+        <p>© 2026 Tankiso. All rights reserved.</p>
+    </footer>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="container footer-content">
-    <p>© 2026 Tankiso. All rights reserved.</p>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
